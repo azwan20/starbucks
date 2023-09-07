@@ -1,0 +1,321 @@
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="icon" href="stb.png">
+
+    <link rel="stylesheet" href="sty.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+    //location
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+</head>
+
+<body>
+    <div class="head"></div>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <a class="navbar-brand" href="tugas1.html">
+            <img src="https://www.starbucks.co.id/image/logo.png" alt="Bootstrap" width="40px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse show navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav main-navbar-nav mx-auto">
+                <li class="nav-item dropdown has-megamenu">
+                    <div class="dropdown">
+                        <button class="nav-link btn btn-secondary bg-light text-uppercase" type="button"
+                            style="border: none;" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Coffee</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Via</a></li>
+                            <li><a class="dropdown-item" href="#">Whole Bean Coffe</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">View All Coffeess</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="dropdown-menu fade-down megamenu bg-dark" role="menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 py-4">
+                                    <div class="row g-3 col-6 mt-0">
+                                        <div class="col-megamenu mbb-4">
+                                            <p class="mb-1 tittle">
+                                                <a>Our Coffee</a>
+                                            </p>
+                                            <ul class="liat-unstyled">
+                                                <li>
+                                                    <a>VIA</a>
+                                                </li>
+                                                <li>
+                                                    <a>Whole Bean Coffe</a>
+                                                </li>
+                                                <li>
+                                                    <a>View All Coffeess</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Menu</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">CoffeHouse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Responsibility</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown mx-auto">
+                        <button class="nav-link btn btn-secondary bg-light text-uppercase" type="button"
+                            style="border: none;" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Starbucks Rewards</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="login.html">Sign in</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Promo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="maps.html" target="_blank"> <i
+                        class="fa-solid fa-location-dot"></i> Find A Store</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid row">
+        <div class="col-lg-8">
+            <h2 style="margin-top: 12px;">Create Starbucks Account</h2>
+            <br>
+            <br>
+            <h4>Please input your account information</h4>
+            <hr size="1" noshade="">
+            <p>You'll need these to sign in to your Starbucks account</p>
+            <!-- <p class="reg">Input Your Name : </p>
+        <input type="text" minlength="9" maxlength="16" style="width: 40%;"> -->
+            <form >
+                <p class="reg">Phone Number</p>
+                <input value="+62" type="text" style="width: 5%;">
+                <input type="text" style="width: 65%;" placeholder="81*******" required>
+                <p class="reg">Email Address</p>
+                <input type="email" style="width: 70%;" name="email" placeholder="john@gmail.com">
+                <p class="reg">Password</p>
+                <input type="password" maxlength="12" aria-autocomplete="list" style="width: 70%;" required>
+                <p style="font-size: 12px;">Must be 8-12 characters. It must contains at least 1 each of Uppercase
+                    letter, Number and a Special character</p>
+                <br>
+                <br>
+                <h4>Input Your Personal Data</h4>
+                <hr size="1" noshade="">
+                <p>Please tell us how to reach you in the future</p>
+                <p class="reg">Member Name</p>
+                <input type="text" required> <input type="text" required>
+                <br>
+                <label>First Name</label>
+                <label style="margin-left: 113px;">Last Name</label>
+                <p class="reg">Date Of Birth</p>
+                <input type="date" required>
+                <p>(* Date of birth cannot be changed after submisson.)</p>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-weight: bold;">Favorite Beverage</p>
+                <input type="text">
+                <br>
+                <br>
+                <input type="checkbox" required> I wish to receive any direct marketting communication s from Starbucks
+                Indonesia
+                <br>
+                <input type="checkbox" required> I agree to Term & Conditions
+                <br>
+                <button class="btn btn-outline-secondary" name="submit" type="submit"
+                    style="background-color: green; border: none;" value="kirim">
+                    <a href="card.html" style="text-decoration: none; color: white;">CREATE ACCOUNT<
+                        /a></button>
+                <br>
+                <p>Already have a account ?<a style="color: green; font-weight: bolder; text-decoration: none;"
+                        tabindex="0" href="login.html"> Sign In </a>here</p>
+            </form> 
+        </div>
+        <div class="col-lg-4 mt-5 colom">
+            <h5>What can i do with a Starbucks acoount?</h5>
+            <br>
+            <p>With a Starbucks account you can register and manage your Starbucks Cards and participate in Starbucks
+                Rewards</p>
+            <br>
+            <p>Turn your purchases into Rewards and start enjoying exclusive benefits</p>
+            <br>
+            <p>Protect your balance if your Card is lost/stolen/demaged</p>
+            <br>
+            <p>View your transaction hostory</p>
+            <br>
+            <p>Regoster multiple Cards</p>
+        </div>
+
+    </div>
+
+    <div class="container-fluid-2 bg-light">
+        <ul class="io">
+            <h2>
+                <li class="logo">
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li class="logo">
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li class="logo">
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+            </h2>
+        </ul>
+    </div>
+    <div class="footer-menu">
+        <div class="container-fluid-5">
+            <div class="row">
+                <div class="col-md-2 mb-0 mb-md-0 text-start">
+                    <div class="heading-footer-menu">
+                        <h6 class="footer-menu-title"><a class="link">ABOUT US</a>
+                        </h6>
+                        <span class="footer-menu-title accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapseabout-us" aria-expanded="false" aria-controls="collapseabout-us">
+                        </span>
+                    </div>
+                    <div class="dont-collapse-sm collapse" id="collapseabout-us">
+                        <ul class="list-footer-menu">
+                            <li>
+                                <a class="link">Our Heritage</a>
+                            </li>
+                            <li>
+                                <a class="link">Pressroom</a>
+                            </li>
+                            <li>
+                                <a class="link">Our Company</a>
+                            </li>
+                            <li>
+                                <a class="link">Career Center</a>
+                            </li>
+                            <li>
+                                <a class="link">Newsroom</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-0 mb-md-0 text-start">
+                    <div class="heading-footer-menu">
+                        <h6 class="footer-menu-title">
+                            <a class="link">COSTUMER SERVICE</a> </h6>
+                        <span class="footer-menu-title accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapsecustomer-service" aria-expanded="false"
+                            aria-controls="collapsecustomer-service"></span>
+                    </div>
+                    <div class="dont-collapse-sm collapse" id="collapsecostumer-service">
+                        <ul class="list-footer-menu">
+                            <li>
+                                <a class="link">Frekuently Asked Questions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-0 mb-md-0 text-start">
+                    <div class="heading-footer-menu">
+                        <h6 class="footer-menu-title">
+                            <a class="link">QUICK LINKS</a>
+                        </h6>
+                        <span class="footer-menu-title accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapsequick-links" aria-expanded="false"
+                            aria-controls="collapsequick-links">
+                        </span>
+                    </div>
+                    <div class="dont-collapse-sm collapse" id="collapsequick-links">
+                        <ul class="list-footer-menu">
+                            <li>
+                                <a class="link">Store Locator</a>
+                            </li>
+                            <li>
+                                <a class="link">For Partner</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap-logo-footer">
+                    <!-- <div class="container">
+                        <div class="position-relative"> -->
+                    <!-- <div class="star logo-footer d-none d-md-block">
+                                <p>STARBUCKS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid-3">
+            <ul class="fo">
+                <li>
+                    <a class="link2">Privacy Statement</a>
+                </li>
+                <li>
+                    <a class="link2">|</a>
+                </li>
+                <li>
+                    <a class="link2">Term of use</a>
+                </li>
+                <li>
+                    <a class="link2">|</a>
+                </li>
+                <li>
+                    <a class="link2">Site Map</a>
+                </li>
+                <li>
+                    <a class="link2">|</a>
+                </li>
+                <li>
+                    <a class="link2">Cookie Preferences</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-4">
+            <p> &copy; 2022 Starbucks Coffee Company, All Rights Reserved</p>
+        </div>
+        <div class="foot bg-dark"></div>
+
+</body>
+
+</html>

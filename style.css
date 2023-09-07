@@ -1,0 +1,22 @@
+.nav-item{
+    padding: 1rem 1rem 0;
+}
+
+.link{
+    padding : 3rem;
+}
+a{
+    text-decoration : none;
+}
+
+.list{
+    list-style: none;
+    margin : 0;
+    padding :0;
+}
+
+#stb{
+    height="300cm";
+    
+    
+}
